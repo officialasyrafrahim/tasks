@@ -80,11 +80,5 @@ public class Main {
                                         .collect(toList());
         return filteredList;
     }
-    public static void printDeadlinesUsingStreams(ArrayList<Task> tasks) {
-        System.out.println("Using Parallel Streams...");
-        tasks.parallelStream()
-             .filter(t -> t instanceof Deadline)
-             .forEach(System.out::println);
-    }
 
 }
